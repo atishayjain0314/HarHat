@@ -1,4 +1,5 @@
 const {expect} = require("chai");
+const { ethers } = require("hardhat");
 
 describe("Token Contract",function(){
     it("Deployment should assgin the total supply of the token",async function(){
@@ -17,5 +18,9 @@ describe("Token Contract",function(){
         const hardhatToken = await Token.deploy();
         await hardhatToken.transfer(addr1.address,10);
         expect(await hardhatToken.balanceOf(addr1.address)).to.equal(10);
+        await hardhatToken.connect(addr1).transfer(addr2.address,5);
+        expect(await hardhatToken.balanceOf(addr1.address)).to.equal(5);
+
     });
 });
+

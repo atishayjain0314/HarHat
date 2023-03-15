@@ -2,9 +2,46 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "D:\\HarHat\\contracts\\token.sol": {
-      "lastModificationDate": 1678814907454,
-      "contentHash": "27c326161e978d8b002a51c96bcf8cc9",
+      "lastModificationDate": 1678883943958,
+      "contentHash": "fd6773a55de91b8f541e735862ab4318",
       "sourceName": "contracts/token.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "Token"
+      ]
+    },
+    "D:\\HarHat\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1678812932661,
+      "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
+      "sourceName": "hardhat/console.sol",
       "solcConfig": {
         "version": "0.8.18",
         "settings": {
@@ -30,10 +67,10 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.17"
+        ">= 0.4.22 <0.9.0"
       ],
       "artifacts": [
-        "Token"
+        "console"
       ]
     }
   }
